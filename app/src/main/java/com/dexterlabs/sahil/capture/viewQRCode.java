@@ -1,4 +1,4 @@
-package com.example.sahil.capture;
+package com.dexterlabs.sahil.capture;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -34,11 +34,11 @@ public class viewQRCode extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_qrcode);
+        setContentView(com.dexterlabs.sahil.capture.R.layout.activity_view_qrcode);
 
-        bsave = (Button) findViewById(R.id.bsave);
+        bsave = (Button) findViewById(com.dexterlabs.sahil.capture.R.id.bsave);
         bsave.setOnClickListener(viewQRCode.this);
-        qrImage = (ImageView) findViewById(R.id.qrImage);
+        qrImage = (ImageView) findViewById(com.dexterlabs.sahil.capture.R.id.qrImage);
 
 
         Bundle extras = getIntent().getExtras();

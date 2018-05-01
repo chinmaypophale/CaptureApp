@@ -1,4 +1,4 @@
-package com.example.sahil.capture;
+package com.dexterlabs.sahil.capture;
 
 import android.Manifest;
 import android.content.Intent;
@@ -52,11 +52,11 @@ public class RealTimeImageToText extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_real_time_image_to_text);
+        setContentView(com.dexterlabs.sahil.capture.R.layout.activity_real_time_image_to_text);
 
-        cameraView = (SurfaceView) findViewById(R.id.surface_view);
-        textView = (TextView) findViewById(R.id.text_view);
-        buttonMes = (Button) findViewById(R.id.buttonMessage);
+        cameraView = (SurfaceView) findViewById(com.dexterlabs.sahil.capture.R.id.surface_view);
+        textView = (TextView) findViewById(com.dexterlabs.sahil.capture.R.id.text_view);
+        buttonMes = (Button) findViewById(com.dexterlabs.sahil.capture.R.id.buttonMessage);
 
         TextRecognizer tr = new TextRecognizer.Builder(getApplicationContext()).build();
         if (!tr.isOperational()) {

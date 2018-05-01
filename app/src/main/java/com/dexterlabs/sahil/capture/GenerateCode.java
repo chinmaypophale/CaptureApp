@@ -1,4 +1,4 @@
-package com.example.sahil.capture;
+package com.dexterlabs.sahil.capture;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.dexterlabs.sahil.capture.R;
+import com.dexterlabs.sahil.capture.viewQRCode;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;

@@ -1,4 +1,4 @@
-package com.example.sahil.capture;
+package com.dexterlabs.sahil.capture;
 
 import android.Manifest;
 import android.content.Intent;
@@ -28,16 +28,16 @@ public class SaveListen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_save_listen);
+        setContentView(com.dexterlabs.sahil.capture.R.layout.activity_save_listen);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1000);
         }
 
-        saveFileName = (EditText)findViewById(R.id.editSaveTextFile);
-        bSave = (Button) findViewById(R.id.bSave);
-        bLoad = (Button)findViewById(R.id.bLoad);
-        editMessageCaptured = (EditText)findViewById(R.id.editMessageCaptured);
+        saveFileName = (EditText)findViewById(com.dexterlabs.sahil.capture.R.id.editSaveTextFile);
+        bSave = (Button) findViewById(com.dexterlabs.sahil.capture.R.id.bSave);
+        bLoad = (Button)findViewById(com.dexterlabs.sahil.capture.R.id.bLoad);
+        editMessageCaptured = (EditText)findViewById(com.dexterlabs.sahil.capture.R.id.editMessageCaptured);
         //editMessageCaptured.setScroller(new Scroller(this));
         //editMessageCaptured.setMaxLines(1);
         editMessageCaptured.setVerticalScrollBarEnabled(true);

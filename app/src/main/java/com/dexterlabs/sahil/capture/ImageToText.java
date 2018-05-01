@@ -1,4 +1,4 @@
-package com.example.sahil.capture;
+package com.dexterlabs.sahil.capture;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -37,17 +37,17 @@ public class ImageToText extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_to_text);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);ivImage = (ImageView)findViewById(R.id.image_view);
-        textfromimage = (TextView)findViewById(R.id.textFromImage);
+        setContentView(com.dexterlabs.sahil.capture.R.layout.activity_image_to_text);
+        Toolbar toolbar = (Toolbar) findViewById(com.dexterlabs.sahil.capture.R.id.toolbar);
+        setSupportActionBar(toolbar);ivImage = (ImageView)findViewById(com.dexterlabs.sahil.capture.R.id.image_view);
+        textfromimage = (TextView)findViewById(com.dexterlabs.sahil.capture.R.id.textFromImage);
         textfromimage.setMovementMethod(new ScrollingMovementMethod());
 
-        buttonConvert = (Button) findViewById(R.id.buttonConvert);
+        buttonConvert = (Button) findViewById(com.dexterlabs.sahil.capture.R.id.buttonConvert);
 
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(com.dexterlabs.sahil.capture.R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -140,7 +140,7 @@ public class ImageToText extends AppCompatActivity {
 
         public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(com.dexterlabs.sahil.capture.R.menu.menu_main, menu);
         return true;
     }
 
@@ -154,7 +154,7 @@ public class ImageToText extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == com.dexterlabs.sahil.capture.R.id.action_settings) {
             return true;
         }
 

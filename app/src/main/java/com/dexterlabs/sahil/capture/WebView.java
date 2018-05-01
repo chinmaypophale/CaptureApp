@@ -1,4 +1,4 @@
-package com.example.sahil.capture;
+package com.dexterlabs.sahil.capture;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ public class WebView extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web_view);
+        setContentView(com.dexterlabs.sahil.capture.R.layout.activity_web_view);
 
-        webView = (android.webkit.WebView) findViewById(R.id.websiteView);
+        webView = (android.webkit.WebView) findViewById(com.dexterlabs.sahil.capture.R.id.websiteView);
 
         if (getIntent()!=null){
 

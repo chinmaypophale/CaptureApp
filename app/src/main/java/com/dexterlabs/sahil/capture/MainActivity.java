@@ -1,4 +1,4 @@
-package com.example.sahil.capture;
+package com.dexterlabs.sahil.capture;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,12 +13,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(com.dexterlabs.sahil.capture.R.layout.activity_main);
 
-        bGenerate =(Button) findViewById(R.id.bGenerate);
-        bImagetoText = (Button) findViewById(R.id.bImageToText);
-        bScan = (Button) findViewById(R.id.bScan);
-        bReal = (Button) findViewById(R.id.bRealTime);
+        bGenerate =(Button) findViewById(com.dexterlabs.sahil.capture.R.id.bGenerate);
+        bImagetoText = (Button) findViewById(com.dexterlabs.sahil.capture.R.id.bImageToText);
+        bScan = (Button) findViewById(com.dexterlabs.sahil.capture.R.id.bScan);
+        bReal = (Button) findViewById(com.dexterlabs.sahil.capture.R.id.bRealTime);
 
         bScan.setOnClickListener(new View.OnClickListener() {
             @Override

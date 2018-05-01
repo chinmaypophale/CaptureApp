@@ -1,4 +1,4 @@
-package com.example.sahil.capture;
+package com.dexterlabs.sahil.capture;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +18,7 @@ public class ScanCode extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scan_code);
+        setContentView(com.dexterlabs.sahil.capture.R.layout.activity_scan_code);
 
     }
 
@@ -43,7 +43,7 @@ public class ScanCode extends AppCompatActivity {
             String resultCode = result.getText();
             Toast.makeText(ScanCode.this, resultCode, Toast.LENGTH_LONG).show();
 
-            setContentView(R.layout.activity_main);
+            setContentView(com.dexterlabs.sahil.capture.R.layout.activity_main);
             scannerView.stopCamera();
 
             Intent intent = new Intent(ScanCode.this,WebView.class);
