@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Capture</string>
+    <string name="title_activity_image_to_text">ImageToText</string>
+    <string name="action_settings">action_settings</string>
+</resources>
